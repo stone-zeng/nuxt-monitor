@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+  --monitor-cpu: #448b82;
+  --monitor-gpu: #8b7ab8;
+  --monitor-memory: #b68a50;
+}
+.dark {
+  --monitor-cpu: #7cb9ae;
+  --monitor-gpu: #b1a1d5;
+  --monitor-memory: #d0ad7a;
+}

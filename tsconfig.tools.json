@@ -1,0 +1,6 @@
+{
+  "extends": "./.nuxt/tsconfig.node.json",
+  "compilerOptions": { "types": ["node"] },
+  "include": ["scripts/**/*.ts", "tests/**/*.ts"],
+  "exclude": ["node_modules", ".output", ".cache"]
+}
