@@ -36,3 +36,11 @@ if (rebuild) {
   if (result.error) throw result.error;
   if (result.status !== 0) process.exit(result.status ?? 1);
 }
+
+// Vite Task resolves shell executables before running compound tasks.
+// Spawn the generated binary here, after compilation has completed.
+if (process.argv.includes("--self-test")) {
+  const result = spawnSync(output, ["--self-test"], { stdio: "inherit" });
+  if (result.error) throw result.error;
+  if (result.status !== 0) process.exit(result.status ?? 1);
+}

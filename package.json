@@ -7,7 +7,7 @@
     "build:native": "vpx scripts/build-native.ts",
     "dev": "vp run build:native && nuxt dev --host 127.0.0.1",
     "start": "vpx scripts/start.ts",
-    "test:native": "vp run build:native && .cache/native/monitor --self-test",
+    "test:native": "vpx scripts/build-native.ts --self-test",
     "postinstall": "nuxt prepare",
     "check": "vp check",
     "fmt": "vp fmt",
