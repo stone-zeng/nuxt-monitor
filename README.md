@@ -68,6 +68,10 @@ closing a browser tab leaves collection running until the server exits.
 
 ## Validation
 
+GitHub Actions runs checks, unit tests, typechecking, native self-tests, and a
+production build on macOS ARM64 with Node.js 26 for pushes to `main`. Actual
+sensor readings and the SSE soak check below should be verified on the target Mac.
+
 ```sh
 vp check
 vp test
